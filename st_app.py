@@ -10,10 +10,10 @@ st.set_page_config(page_title="Care Load Forecast Dashboard", layout="wide")
 col1, col2 = st.columns([1,6])
 
 with col1:
-    st.image("C:/Users/HP1/Desktop/project_2/hhs.png", width=120)
+    st.image("hhs.png", width=120)
 
 with col2:
-    st.image("C:/Users/HP1/Desktop/project_2/unified.png", width=120)
+    st.image("unified.png", width=120)
 
 st.title("📊 Predictive Forecasting of Care Load & Placement Demand")
 
