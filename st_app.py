@@ -29,7 +29,7 @@ def load_data():
         df[col] = df[col].astype(str).str.replace(',', '', regex=False)
         df[col] = pd.to_numeric(df[col], errors='coerce')
 
-    df = df.fillna(method='ffill').fillna(method='bfill')
+    df = df.ffill().bfill()
 
     # --- FORCE synthetic safe date index ---
     df['Date'] = pd.date_range(start='2020-01-01', periods=len(df), freq='D')
