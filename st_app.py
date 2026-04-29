@@ -20,7 +20,7 @@ st.title("📊 Predictive Forecasting of Care Load & Placement Demand")
 # ------------------ LOAD DATA ------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/HP1/Desktop/project_2/cleaned_data.csv")
+    df = pd.read_csv("cleaned_data.csv")
     df.columns = df.columns.str.replace('*','', regex=False).str.strip()
     
 
